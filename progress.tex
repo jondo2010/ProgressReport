@@ -38,27 +38,17 @@
 
 The major goals of the project include design and implementation of the CAN tester, hardware design for the four major modules, manufacturing and populating of the four module printed circuit boards, design and writing of control software, testing of individual modules, and completing the neccessary reports for the thesis course. 
 
-The project is currently on schedule. Module hardware design is nearly completed and the test suites have been designed and written. The CAN network tester has been designed and preliminary software has been written.
+The project is currently on schedule. Module hardware design is nearly completed and several of the test suites have been  written. The CAN network tester has been designed and preliminary software has been written.
 
 \paragraph{Summary of Work Completed:}
 
-\subparagraph{Clutch control system} Much further reasearch has been done on the clutch control system. \\
-Two seperate tests have been performed on the system:
-\begin{enumerate}
- \item a bench test of a PWM solenoid valve to prove the idea that variation in PWM percentage with a constant supply pressure would modulate the steady-state force on the pison, and therefore the clutch position. The central compressed air supply was used (120psi), and a micro was set up on a breadboard to generate a PWM signal fed into an amplifier stage for the valve. Varying the PWM percentage did in fact modulate the position of the clutch, however the time constant to reach steady-state was very long. This is related to the flow rate through the valve. We were able to determine that the particular valve, although particularly suited to PWM control signals, had too small of a flow rate for our requirements.
- \item 
-\end{enumerate}
+\begin{enumerate} 
 
-Summarize the work completed so far. Specify the work performed by each member as much as
-possible. (You are expected to spend 6 hours per week on your project).
-Refer to the task names in the Proposal and GNATT chart if they are good indicators for what was done;
-otherwise give a brief description of the tasks which were actually carried.
-Mention the dates of any design review meetings which were held and describe any decisions made and
-reasons for making those decisions (demonstrate how you applied engineering knowledge in the
-decision making process).
-Describe the problems that were encountered (if any). State if you have made any modifications to the
-tasks you have completed as compared to what was stated in the Proposal.
+Much further reasearch has been done on the clutch control system. Two seperate tests have been performed on the system: a bench test of a PWM solenoid valve to prove the idea that variation in PWM percentage with a constant supply pressure would modulate the steady-state force on the pison, and therefore the clutch position. 
 
+MFJ has written a series of software test suites to verify the correct operaiton of each module. He has also written burn-in tests to verify that the PCB design is correct and all components have been populated correctly. 
+
+MFJ has designed the CAN testing module, and will be using an Olimex AT90CAN128 development board as the platform for the embedded component of the module. The client-embedded protocol has been designed. The interface between the client and embedded system has been designed and test applications have been written. A small CAN receiver module that blinks an LED when receiving a message has been designed to test the module.
 
 \paragraph{Future Work:}
 
